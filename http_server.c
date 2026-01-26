@@ -133,8 +133,6 @@ void handle_request(SOCKET client) {
         char* mime_type = get_mime_type(f_ext); // obtem o mime_type pra resposta;
         FILE* fresponse = fopen(file_path, "rb"); // ponteiro para o arquivo
 
-        printf("\n%s\n\n", file_path);
-
         response = get_http_response(fresponse, mime_type);
         
         send(client, response, strlen(response), 0);
@@ -158,8 +156,6 @@ char* get_http_response(FILE* fresponse, char* mime_type) {
     fseek(fresponse, 0, SEEK_END);
     long fsize = ftell(fresponse);
     fseek(fresponse, 0, SEEK_SET);
-
-    printf("tamanho do arquivo: %d\n", fsize);
 
     snprintf(response, BUFSIZE,
              "HTTP/1.1 200 OK\r\n"
@@ -197,4 +193,5 @@ char* get_file_ext(const char* file_name) {
     }
 
     return ++dot;
+
 }
