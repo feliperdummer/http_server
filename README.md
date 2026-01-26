@@ -17,7 +17,7 @@ Para instalar e rodar:
   2 - Compile o arquivo http_server.c com:  
         gcc http_server.c -lws2_32 -o http-server.exe;  
           
-  3 - Altere a macro ROOT caso para o caminho que preferir  
+  3 - Altere a macro ROOT para o caminho que preferir  
       e a macro PORTA pra que preferir também;  
   
 ----------------------------------------------------------  
