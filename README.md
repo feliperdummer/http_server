@@ -5,6 +5,7 @@ Fontes que me ajudaram no projeto:
 Documentação do protocolo HTTP: https://datatracker.ietf.org/doc/html/rfc9112  
 Guia HTTP Mozilla: https://developer.mozilla.org/en-US/docs/Web/HTTP  
 Github do JeffreyTheCoder: https://github.com/JeffreytheCoder  
+Documentação da lib Winsock2, para uso de sockets no windows: https://learn.microsoft.com/en-us/windows/win32/api/winsock2/?utm_source=chatgpt.com  
 
 Servidor HTTP simples que serve como objeto de estudo do protocolo HTTP e como as requisições são feitas e respondidas pelo servidor  
 
