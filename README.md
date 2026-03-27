@@ -11,12 +11,10 @@ Servidor HTTP simples que serve como objeto de estudo do protocolo HTTP e como a
 
 ----------------------------------------------------------  
 
-Para instalar e rodar:  
-  
-  1 - Instale os três arquivos fonte do repositório;  
+Para rodar:    
     
   2 - Compile o arquivo http_server.c com:  
-        gcc http_server.c -lws2_32 -o http-server.exe;  
+        gcc http_server_coment.c http_verbs.c funcoes_get.c -lws2_32 -o http_server_comment.exe 
           
   3 - Altere a macro ROOT para o caminho que preferir  
       e a macro PORTA pra que preferir também;  
